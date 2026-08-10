@@ -1,5 +1,6 @@
-<h1 align="center">Hi, I'm Shehryar Ahmed 👋</h1>
-<p align="center"><b>Full-Stack & Backend Developer</b> — scalable, secure software &amp; AI-powered SaaS</p>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/star-anonymus/star-anonymus/main/banner.svg" alt="Shehryar Ahmed — Full-Stack & Backend Developer" width="100%" />
+</p>
 
 <p align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=800&color=7C6CFF&center=true&vCenter=true&width=620&lines=Java+%7C+Spring+Boot+%7C+.NET+%2F+C%23;Node.js+%7C+NestJS+%7C+TypeScript;React+%7C+Next.js+%7C+Tailwind+CSS;Building+AI-powered+SaaS+products" alt="Tech stack" />

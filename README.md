@@ -1,13 +1,6 @@
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=star-anonymus&label=Profile%20views&color=7c6cff&style=flat" alt="Profile views" />
-</p>
+<h1 align="center">Hi, I'm Shehryar Ahmed 👋</h1>
+<p align="center"><b>Full-Stack & Backend Developer</b> — scalable, secure software &amp; AI-powered SaaS</p>
 
-<!-- Banner -->
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,20,24&height=200&section=header&text=Shehryar%20Ahmed&fontSize=52&fontColor=ffffff&animation=fadeIn&desc=Full-Stack%20%26%20Backend%20Developer%20%7C%20AI-Powered%20SaaS&descSize=18&descAlignY=60" alt="Shehryar Ahmed" />
-</p>
-
-<!-- Animated stack tagline -->
 <p align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=800&color=7C6CFF&center=true&vCenter=true&width=620&lines=Java+%7C+Spring+Boot+%7C+.NET+%2F+C%23;Node.js+%7C+NestJS+%7C+TypeScript;React+%7C+Next.js+%7C+Tailwind+CSS;Building+AI-powered+SaaS+products" alt="Tech stack" />
 </p>
@@ -50,8 +43,4 @@
 
 ### 🤝 Connect
 - 📂 Explore my work in the repositories below.
-- 📍 Based in Rawalpindi, Pakistan — open to interesting backend & full-stack work.
-
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,20,24&height=100&section=footer" alt="" />
-</p>
+- 📍 Based in Rawalpindi, Pakistan — open to backend & full-stack opportunities.

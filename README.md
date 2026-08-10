@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=star-anonymus&label=Profile%20views&color=7c6cff&style=flat" alt="Profile views" />
+</p>
+
 <!-- Banner -->
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,20,24&height=200&section=header&text=Shehryar%20Ahmed&fontSize=52&fontColor=ffffff&animation=fadeIn&desc=Full-Stack%20%26%20Backend%20Developer%20%7C%20AI-Powered%20SaaS&descSize=18&descAlignY=60" alt="Shehryar Ahmed" />

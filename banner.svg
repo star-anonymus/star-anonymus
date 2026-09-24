@@ -1,23 +1,196 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" fill="none" role="img" aria-label="Shehryar Ahmed — Full-Stack and Backend Developer">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" viewBox="0 0 1200 340"
+     role="img" aria-label="Shehryar Ahmed — Full-Stack Software Engineer. Java, Spring Boot, .NET, NestJS, React, Next.js, Flutter.">
+  <title>Shehryar Ahmed — Full-Stack Software Engineer</title>
+
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="300" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#0b0d12"/>
-      <stop offset="1" stop-color="#141824"/>
+    <!-- Surface -->
+    <linearGradient id="surface" x1="0" y1="0" x2="1200" y2="340" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#05060d"/>
+      <stop offset="1" stop-color="#0a0d18"/>
     </linearGradient>
-    <radialGradient id="glow" cx="0.18" cy="0.15" r="0.9">
-      <stop stop-color="#7c6cff" stop-opacity="0.38"/>
-      <stop offset="1" stop-color="#7c6cff" stop-opacity="0"/>
+
+    <!-- Aurora blobs -->
+    <radialGradient id="blobIris">
+      <stop offset="0" stop-color="#6366f1" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#6366f1" stop-opacity="0"/>
     </radialGradient>
-    <radialGradient id="glow2" cx="0.95" cy="0.95" r="0.7">
-      <stop stop-color="#ff6b6b" stop-opacity="0.18"/>
-      <stop offset="1" stop-color="#ff6b6b" stop-opacity="0"/>
+    <radialGradient id="blobViolet">
+      <stop offset="0" stop-color="#a855f7" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#a855f7" stop-opacity="0"/>
     </radialGradient>
+    <radialGradient id="blobCyan">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity="0.38"/>
+      <stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Animated gradient for the name -->
+    <linearGradient id="nameFill" x1="0" y1="0" x2="620" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#a5b4fc"/>
+      <stop offset="0.35" stop-color="#c084fc"/>
+      <stop offset="0.7" stop-color="#22d3ee"/>
+      <stop offset="1" stop-color="#a5b4fc"/>
+      <animate attributeName="x1" values="-620;0;-620" dur="7s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="0;620;0" dur="7s" repeatCount="indefinite"/>
+    </linearGradient>
+
+    <linearGradient id="sheen" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#ffffff" stop-opacity="0.07"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Top hairline -->
+    <linearGradient id="hairline" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#6366f1"/>
+      <stop offset="0.5" stop-color="#a855f7"/>
+      <stop offset="1" stop-color="#22d3ee"/>
+    </linearGradient>
+
+    <!-- Grid, faded towards the edges -->
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" fill="none" stroke="#ffffff" stroke-opacity="0.045" stroke-width="1"/>
+    </pattern>
+    <radialGradient id="gridFade" cx="0.5" cy="0.1" r="0.95">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <mask id="gridMask">
+      <rect width="1200" height="340" fill="url(#gridFade)"/>
+    </mask>
+
+    <clipPath id="card">
+      <rect width="1200" height="340" rx="22"/>
+    </clipPath>
+
+    <style>
+      /* transform-box keeps percentage-free transforms anchored to each shape */
+      .blob { transform-box: fill-box; transform-origin: center; }
+      .b1 { animation: driftA 19s ease-in-out infinite; }
+      .b2 { animation: driftB 23s ease-in-out infinite; }
+      .b3 { animation: driftA 27s ease-in-out infinite reverse; }
+
+      @keyframes driftA {
+        0%, 100% { transform: translate(0, 0) scale(1); }
+        33%      { transform: translate(38px, -26px) scale(1.14); }
+        66%      { transform: translate(-30px, 22px) scale(0.92); }
+      }
+      @keyframes driftB {
+        0%, 100% { transform: translate(0, 0) scale(1.06); }
+        50%      { transform: translate(-44px, 28px) scale(0.9); }
+      }
+
+      .dot { animation: beat 2.4s ease-out infinite; transform-box: fill-box; transform-origin: center; }
+      @keyframes beat {
+        0%   { opacity: 1;   transform: scale(1); }
+        55%  { opacity: 0.35; transform: scale(1.55); }
+        100% { opacity: 1;   transform: scale(1); }
+      }
+
+      .fade-up { opacity: 0; animation: fadeUp 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
+      .d1 { animation-delay: 0.15s; } .d2 { animation-delay: 0.3s; }
+      .d3 { animation-delay: 0.45s; } .d4 { animation-delay: 0.6s; }
+      .d5 { animation-delay: 0.75s; }
+      @keyframes fadeUp {
+        from { opacity: 0; transform: translateY(14px); }
+        to   { opacity: 1; transform: translateY(0); }
+      }
+
+      .chip { animation: chipIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.9s backwards; }
+      @keyframes chipIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; } }
+
+      .sweep { animation: sweep 6s ease-in-out infinite; }
+      @keyframes sweep {
+        0%, 100% { opacity: 0; }
+        45%      { opacity: 1; }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .blob, .dot, .fade-up, .chip, .sweep { animation: none; opacity: 1; }
+      }
+    </style>
   </defs>
-  <rect width="1200" height="300" rx="18" fill="url(#bg)"/>
-  <rect width="1200" height="300" rx="18" fill="url(#glow)"/>
-  <rect width="1200" height="300" rx="18" fill="url(#glow2)"/>
-  <rect x="64" y="112" width="6" height="96" rx="3" fill="#7c6cff"/>
-  <text x="94" y="150" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="54" font-weight="700" fill="#ffffff">Shehryar Ahmed</text>
-  <text x="96" y="192" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="25" font-weight="600" fill="#7c6cff">Full-Stack &amp; Backend Developer  &#183;  AI-Powered SaaS</text>
-  <text x="96" y="230" font-family="Consolas, Menlo, monospace" font-size="17" fill="#9aa0ac">Java &#183; Spring Boot &#183; .NET &#183; Node.js &#183; NestJS &#183; React &#183; Next.js &#183; Python</text>
+
+  <g clip-path="url(#card)">
+    <rect width="1200" height="340" fill="url(#surface)"/>
+
+    <!-- Aurora -->
+    <g>
+      <circle class="blob b1" cx="240" cy="70"  r="330" fill="url(#blobIris)"/>
+      <circle class="blob b2" cx="1010" cy="300" r="300" fill="url(#blobViolet)"/>
+      <circle class="blob b3" cx="820" cy="30"  r="260" fill="url(#blobCyan)"/>
+    </g>
+
+    <!-- Grid -->
+    <rect width="1200" height="340" fill="url(#grid)" mask="url(#gridMask)"/>
+
+    <!-- Diagonal sheen, soft-edged so it reads as light rather than a panel -->
+    <g transform="rotate(16 600 170)">
+      <rect class="sweep" x="-320" y="-160" width="260" height="660" fill="url(#sheen)" opacity="0">
+        <animate attributeName="x" values="-340;1340;1340" dur="7s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+
+    <!-- Content -->
+    <g transform="translate(72, 0)" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+
+      <!-- Eyebrow -->
+      <g class="fade-up d1">
+        <rect x="0" y="72" width="34" height="2" rx="1" fill="#818cf8"/>
+        <text x="48" y="78" fill="#818cf8" font-size="15" font-weight="600" letter-spacing="5.5"
+              font-family="ui-monospace, 'SF Mono', 'Cascadia Mono', Menlo, Consolas, monospace">
+          SOFTWARE ENGINEER
+        </text>
+      </g>
+
+      <!-- Name -->
+      <text class="fade-up d2" x="0" y="164" fill="url(#nameFill)" font-size="74" font-weight="800" letter-spacing="-2.4">
+        Shehryar Ahmed
+      </text>
+
+      <!-- Role line -->
+      <text class="fade-up d3" x="0" y="212" fill="#a7b0c6" font-size="21"
+            font-family="ui-monospace, 'SF Mono', 'Cascadia Mono', Menlo, Consolas, monospace">
+        <tspan fill="#6366f1">&gt;</tspan> Java · Spring Boot · .NET · NestJS · React · Next.js · Flutter
+      </text>
+
+      <!-- Sub -->
+      <text class="fade-up d4" x="0" y="250" fill="#6e7894" font-size="18">
+        Scalable APIs, secure systems, and AI-powered SaaS — built end to end.
+      </text>
+
+      <!-- Status chip -->
+      <g class="chip">
+        <rect x="0" y="272" width="272" height="38" rx="19" fill="#ffffff" fill-opacity="0.05"
+              stroke="#ffffff" stroke-opacity="0.10"/>
+        <circle class="dot" cx="24" cy="291" r="5" fill="#34d399"/>
+        <text x="42" y="297" fill="#a7b0c6" font-size="15" font-weight="500">
+          Available for opportunities
+        </text>
+      </g>
+    </g>
+
+    <!-- Monogram. The positioning transform lives on the outer group: a CSS
+         `transform` animation on the same element would replace it. -->
+    <g transform="translate(1000, 96)">
+      <g class="fade-up d5">
+      <rect width="112" height="112" rx="28" fill="url(#hairline)" opacity="0.92"/>
+      <text x="56" y="74" text-anchor="middle" fill="#ffffff" font-size="46" font-weight="800"
+            letter-spacing="-1.5"
+            font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+          SA
+        </text>
+      </g>
+    </g>
+
+    <!-- Location, bottom right -->
+    <text class="fade-up d5" x="1128" y="292" text-anchor="end" fill="#6e7894" font-size="15"
+          font-family="ui-monospace, 'SF Mono', 'Cascadia Mono', Menlo, Consolas, monospace">
+      Rawalpindi, PK
+    </text>
+
+    <!-- Top hairline -->
+    <rect width="1200" height="4" fill="url(#hairline)"/>
+  </g>
+
+  <rect width="1200" height="340" rx="22" fill="none" stroke="#ffffff" stroke-opacity="0.08"/>
 </svg>

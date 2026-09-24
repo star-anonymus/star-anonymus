@@ -38,7 +38,7 @@ I build the parts of a product that have to stay up: APIs, authentication, real-
 
 | Project | What it is | Built with |
 | --- | --- | --- |
-| **[MediFind](https://shehryar-portfolio-opal.vercel.app/projects/medifind)** | Emergency dispatch platform — live ambulance tracking over WebSockets, AI triage, React admin portal | Flutter · NestJS · Prisma · PostgreSQL · Socket.io |
+| **[MediFind](https://shehryar-portfolio-opal.vercel.app/projects/medifind)** | Deaf-first emergency dispatch — a Socket.io room per emergency, self-hosted push, Gemini medical summaries | Flutter · Express · TypeScript · Socket.io · Prisma · PostgreSQL |
 | **[DI AYEZAL'S](https://shehryar-portfolio-opal.vercel.app/projects/di-ayezals)** | Production storefront for a Pakistani retail brand — COD checkout, per-size stock, live order alerts | React 19 · Express 5 · Prisma · MariaDB · SSE |
 | **[Quantum Framer](https://quantumframer.com)** | AI platform that pulls viral short clips out of long-form video — live commercial product | React · TypeScript · Node.js |
 | **[Vytal Health](https://vytal-health.vercel.app)** | Healthcare SaaS with a full product dashboard and a real AI chatbot | React · TypeScript · Vite · Tailwind v4 |
